@@ -1,0 +1,27 @@
+$meta
+  title = (CLIENT OWN) Paints — Premium Paint & Colour Studio
+  description = Shop premium interior, exterior and masonry paint in 18 curated colours. Build a colour scheme, order samples, check out and track delivery from a full storefront backend.
+  image = https://user.uploads.dev/file/e231d107041e06461260c915c28ec4c2.jpg
+  tags = paint, ecommerce, paint colours, interior design, home improvement, store, shopping
+  header
+    mode = minimal
+
+// Persistent storage for the storefront backend (see src/README.md).
+// The database schema that this storefront runs on is in src/schema.sql
+kv = {import:kv-plugin}
+generateText = {import:ai-text-plugin}
+
+// Shop settings — tweak these freely; the whole UI reads from here.
+store
+  name = (CLIENT OWN) Paints
+  shortName = (CLIENT OWN)
+  tagline = Colour that covers, quality that lasts
+  blurb = Premium water-based paint, mixed in (CLIENT OWN) and delivered nationwide. Eighteen curated colours, three paint systems, zero guesswork.
+  phone = (CLIENT OWN)
+  email = (CLIENT OWN)
+  addressLine = (CLIENT OWN)
+  currencySymbol = $
+  taxRate = 0.0825
+  freeShippingThreshold = 75
+  shippingFlat = 6.95
+  vatLabel = Sales tax
